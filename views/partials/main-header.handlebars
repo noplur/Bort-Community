@@ -1,0 +1,20 @@
+ <!--background & navbar-->
+  <div class="uk-position-relative">
+      <img class="uk-width-expand" src="/public/stylesheets/img/background.jpeg" alt="">
+        <div class="uk-position-top">
+          <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+              <img src="/public/stylesheets/img/logo.svg" width="100" height="" alt="" uk-img>
+                <div class="uk-navbar-right">
+                  <ul class="uk-subnav uk-subnav-pill uk-text-bolder">
+                    <li><a class="link" href="/">Home</a></li>
+                    <li><a class="link" href="/dashboard">Dashboard</a></li>
+                    <li>{{#if loggenIn}}<a class="link" id="logout" href="/">Logout</a></li>
+                    <li>
+                        {{else}}
+                        <a class="link" href="/login">Login</a></li>
+                        {{/if}}
+                    </ul>
+                </div>
+          </nav>
+        </div>
+  </div>
